@@ -5,7 +5,7 @@ import java.util.List;
 
 public class LinearCongruentialGenerator {
     private List<Double> generatedNumbers = new ArrayList<>();
-    private final int step = 5;//Шаг для проверки "Период последовательности = N"
+    private final int step = 1;//Шаг для проверки "Период последовательности = N"
     private int N;
     private int a;
     private int c;
@@ -45,7 +45,7 @@ public class LinearCongruentialGenerator {
     public void periodIsEqualToN() {
         System.out.println("=========================================================");
         System.out.println("Сгенерированные значения в начале N:");
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < step; i++) {
             System.out.println("{" + i + "}" + this.generatedNumbers.get(i));
         }
         System.out.println("=========================================================");
